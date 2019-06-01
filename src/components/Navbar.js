@@ -6,7 +6,8 @@ import classNames from "classnames/bind";
 import styles from "./Navbar.module.scss";
 
 const { SubMenu }  = Menu;
-const logo = require("../assets/smallLogo.png");
+const logo = require("../assets/largeLogo.png");
+
 const cx = classNames.bind(styles);
 
 
@@ -14,17 +15,19 @@ const Navbar = () => {
   return(
     <div>
       <Helmet>
-        <title>NodeBird</title>
+        <title>GlassWill</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.js" />
       </Helmet>
       <Menu mode="horizontal">
-        <SubMenu style={{marginLeft: 160}}
-          title={
-            <span className="submenu-title-wrapper">
-              <img src={logo} className={cx('logo')} />
-            </span>
-          }>
+        <Menu.Item style={{marginLeft: 160}} className={cx('rmBorder')}>
+          <img src={logo} className={cx('logo')}/>
+        </Menu.Item>
+        <SubMenu title={
+          <span className="submenu-title-wrapper">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" width={20} style={{marginLeft: 75, marginBottom: 15}}/>
+          </span>
+        } className={cx('rmBorder')}>
           <Menu.Item className={cx('item')} key="writings"><Link to="/">띄운 유리병</Link></Menu.Item>
           <Menu.Item className={cx('item')} key="takings"><Link to="/">회수한 유리병</Link></Menu.Item>
           <Menu.Item className={cx('item')} key="take"><Link to="/">유리병 담기</Link></Menu.Item>
