@@ -7,6 +7,9 @@ import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import modules from "./modules";
 import { createStore } from "redux";
+import Amplify from "aws-amplify";
+import config from "./aws-exports";
+Amplify.configure(config);
 
 const store = createStore(
   modules,

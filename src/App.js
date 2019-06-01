@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import classNames from "classnames/bind";
 import styles from "./App.module.scss";
+import { withAuthenticator } from "aws-amplify-react";
 
 const cx = classNames.bind(styles);
 
@@ -20,4 +21,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withAuthenticator(App);
