@@ -15,5 +15,22 @@
                 "glassletter2b03219f": {}
             }
         }
+    },
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "glass-letter-dev-20190601190624-authRole",
+            "UnauthRoleArn": "arn:aws:iam::201296855280:role/glass-letter-dev-20190601190624-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::201296855280:role/glass-letter-dev-20190601190624-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "glass-letter-dev-20190601190624-deployment",
+            "UnauthRoleName": "glass-letter-dev-20190601190624-unauthRole",
+            "StackName": "glass-letter-dev-20190601190624",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:201296855280:stack/glass-letter-dev-20190601190624/ea16e8c0-8454-11e9-9235-0a9c42377702"
+        },
+        "categories": {
+            "auth": {
+                "glassletter2b03219f": {}
+            }
+        }
     }
 }
