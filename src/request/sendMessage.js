@@ -24,3 +24,13 @@ export async function sendmultipart(source, target, formdata) {
   const result = await axios.post(url, formdata);
   return result;
 }
+
+
+export async function getmessage(source){
+    const url = routes['view_message']
+    const result = await axios.get(url, {
+     source : source
+    });
+    return result
+
+}
