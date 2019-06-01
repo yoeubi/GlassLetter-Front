@@ -38,7 +38,7 @@ GlassWill은 '유언은 어려운 것이다'라는 기존의 유언문화에서 
 
 ## 스플래쉬
 
-<img src="/Users/samslow/Library/Application Support/typora-user-images/image-20190601230743412.png" width="250px">
+<img src="./src/assets/README/splash.png" width="250px">
 
 * glasswill.com 으로 접속하면 3초간 스플래시 이미지가 활성화되고 다음화면으로 넘어간다.
 
@@ -46,9 +46,9 @@ GlassWill은 '유언은 어려운 것이다'라는 기존의 유언문화에서 
 
 ## 받는사람 입력 & 유언 작성
 
-<img src="/Users/samslow/Library/Application Support/typora-user-images/image-20190601231035540.png" width="250px">
+<img src="./src/assets/README/home.png" width="250px">
 
-<img src="/Users/samslow/Library/Application Support/typora-user-images/image-20190601231148379.png" width="250px">
+<img src="./src/assets/README/add-Adress.png" width="250px">
 
 * 연락처를 추가하여 유리병을 바로 띄울 수 있는 페이지
 
