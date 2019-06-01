@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import Logo from "../assets/largeLogo.png";
 import classNames from "classnames/bind";
 import styles from "./Main.module.scss";
-import {sendtext,sendmultipart} from "../request/sendMessage"
 import { Auth } from "aws-amplify";
-import "react-quill/dist/quill.snow.css";
-import ReactQuill from "react-quill";
 import Navbar from "./Navbar";
-import axios from 'axios';
+import axios from "axios";
+import ReactQuill from "react-quill";
 
 const cx = classNames.bind(styles);
-
 
 const Main = () => {
   const [name, setName] = useState("");
@@ -25,11 +22,10 @@ const Main = () => {
     }
   };
   const onSubmit = async e => {
-    const data = e.target.elements.myfile['files'][0]
     e.preventDefault();
     const user = await Auth.currentAuthenticatedUser();
     console.log(user.username);
-    const result = await axios.post("http://localhost:5000/register", {
+    await axios.post("http://localhost:5000/register", {
       username: user.username
     });
   };
@@ -63,7 +59,7 @@ const Main = () => {
   ];
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className={cx("logo-wrapper")}>
         <img src={Logo} alt="로고" />
       </div>
@@ -85,7 +81,7 @@ const Main = () => {
         <div className={cx("popup-wrapper")}>
           <div className={cx("popup")}>
             <div className={cx("title")}>
-              연락처 추가하기{" "}
+              옵션 추가하기{" "}
               <span className={cx("exit")} onClick={() => setPopup(false)}>
                 ✖
               </span>

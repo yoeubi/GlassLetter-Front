@@ -1,9 +1,9 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-import Splash from "../components/Splash";
 
 const withSplash = WrappedComponent => props => {
-  const isFirstSplash = JSON.parse(sessionStorage.getItem("isSplash"));
+  const item = sessionStorage.getItem("isSplash");
+  const isFirstSplash = JSON.parse(item);
   if (!isFirstSplash) {
     return <Redirect to="/logo" />;
   } else {
