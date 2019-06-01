@@ -1,0 +1,37 @@
+type Blog @model {
+  id: ID!
+  name: String!
+  posts: [Post] @connection(name: "BlogPosts")
+}
+type Post @model {
+  id: ID!
+  title: String!
+  blog: Blog @connection(name: "BlogPosts")
+  comments: [Comment] @connection(name: "PostComments")
+}
+type Comment @model {
+  id: ID!
+  content: String
+  post: Post @connection(name: "PostComments")
+}
+
+type User @model @auth  {
+  id: ID!
+  userId: String!
+  userName: String
+  messages: [Message] @connection(name: "UserMessages")
+  phones: [Phone]
+}
+
+type Message @model {
+  id: ID!
+  source: String!
+  target: String!
+  user: User @connection(name: "UserMessage")
+  url: String
+  content: String
+}
+
+type Phone @model {
+
+}
