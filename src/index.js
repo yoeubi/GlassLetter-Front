@@ -11,17 +11,15 @@ import Amplify from "aws-amplify";
 import config from "./aws-exports";
 Amplify.configure(config);
 
-const store = createStore(
-  modules,
-  window.devToolsExtension && window.devToolsExtension()
-);
+// const store = createStore(
+//   modules,
+//   window.devToolsExtension && window.devToolsExtension()
+// );
 
 ReactDOM.render(
-  <Provider store={store}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Provider>,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.getElementById("root")
 );
 

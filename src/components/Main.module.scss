@@ -1,0 +1,32 @@
+.logo-wrapper {
+  position: relative;
+  height: 400px;
+  img {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.text-wrapper {
+  box-sizing: border-box;
+  textarea {
+    display: block;
+    width: 85%;
+    height: 210px;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    line-height: 30px;
+    // vertical-align: middle;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 30px,
+      #000 31px,
+      #000 31px
+    );
+  }
+}
