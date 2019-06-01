@@ -2,7 +2,7 @@ import routes from "./constant";
 import axios from "axios";
 
 
-async function sendtext(source,target,text){
+export async function sendtext(source,target,text){
 
   // target 은 전화번호
 
@@ -17,4 +17,12 @@ async function sendtext(source,target,text){
   return result
 }
 
-export default sendtext
+export async function sendmultipart(source,target,formdata){
+  formdata.append("source",source)
+  formdata.append("target",target)
+  formdata.append("type",formdata.get("data").type)
+  const url = routes['send_message']
+  console.log(url)
+  const result = await axios.post(url, formdata);
+  return result
+}
