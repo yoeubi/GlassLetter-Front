@@ -1,4 +1,6 @@
-# GlassWill 서비스 소개 및 기능 명세
+# GlassWill 유리병 편지
+
+<img src="./src/assets/largeLogo.png" width="400px">
 
 여러분은 언제 죽음을 생각하시나요? 그리고 얼마나 준비하고 계신가요?
 
