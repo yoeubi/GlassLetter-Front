@@ -32,6 +32,6 @@ type Message @model {
   content: String
 }
 
-type Phone @model {
+type Phone @model @auth @searchable {
 
 }
