@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../assets/largeLogo.png";
 import classNames from "classnames/bind";
 import styles from "./Main.module.scss";
-import axios from "axios";
+import {sendtext,sendmultipart} from "../request/sendMessage"
 import { Auth } from "aws-amplify";
 
 const cx = classNames.bind(styles);
@@ -10,13 +10,12 @@ const cx = classNames.bind(styles);
 const Main = () => {
   const [text, setText] = useState("");
   const onSubmit = async e => {
+    const data = e.target.elements.myfile['files'][0]
     e.preventDefault();
-    console.log(111);
-    const user = await Auth.currentAuthenticatedUser();
-    console.log(user.username);
-    const result = await axios.post("http://localhost:5000/register", {
-      username: user.username
-    });
+    var formData = new FormData()
+    formData.append("data",data)
+
+    const result = await sendmultipart("a","b",formData)
     console.log(result);
   };
   return (
@@ -26,6 +25,7 @@ const Main = () => {
       </div>
       <div className={cx("text-wrapper")}>
         <form action="" onSubmit={onSubmit}>
+         <input type="file" name="myfile"></input>
           <textarea onChange={e => setText(e.target.value)} value={text} />
           <button>등록</button>
         </form>
