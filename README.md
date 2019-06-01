@@ -1,7 +1,7 @@
 <h1 align="center">GlassWill 유리병 편지</h1>
 
 <div align="middle">
- <img src="./src/assets/largeLogo.png" height="200px" style="text-align=center">
+ <img src="./src/assets/largeLogo.png" height="400px" style="text-align=center">
 </div>
 
 <p align="center">
