@@ -6,6 +6,7 @@ import { Auth } from "aws-amplify";
 import Navbar from "./Navbar";
 import axios from "axios";
 import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
 const cx = classNames.bind(styles);
 
@@ -89,7 +90,7 @@ const Main = () => {
             <div className={cx("list")}>
               <ul>
                 {userList.map(item => (
-                  <li>
+                  <li key={item.tel}>
                     <span className={cx("person")}>{item.name}</span>
                     <span className="phonenumber">{item.tel}</span>
                   </li>
