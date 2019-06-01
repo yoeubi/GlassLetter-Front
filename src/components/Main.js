@@ -4,6 +4,7 @@ import classNames from "classnames/bind";
 import styles from "./Main.module.scss";
 import {sendtext,sendmultipart} from "../request/sendMessage"
 import { Auth } from "aws-amplify";
+import Navbar from "./Navbar";
 
 const cx = classNames.bind(styles);
 
@@ -20,6 +21,7 @@ const Main = () => {
   };
   return (
     <div>
+      <Navbar/>
       <div className={cx("logo-wrapper")}>
         <img src={Logo} alt="로고" />
       </div>
