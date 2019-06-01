@@ -17,7 +17,6 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          {/* <Route exact path="/" component={Home}/> */}
           <Route exact path="/" component={withSplash(Main)} />
           <Route exact path="/logo" component={Splash} />
         </Switch>
