@@ -6,6 +6,7 @@ import { withAuthenticator } from "aws-amplify-react";
 import Splash from "./components/Splash";
 import withSplash from "./hoc/withSplash";
 import Main from "./components/Main";
+import Navbar from "./components/Navbar";
 
 const cx = classNames.bind(styles);
 // 30 인트로
@@ -17,7 +18,6 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          {/* <Route exact path="/" component={Home}/> */}
           <Route exact path="/" component={withSplash(Main)} />
           <Route exact path="/logo" component={Splash} />
         </Switch>
