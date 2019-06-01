@@ -1,0 +1,8 @@
+{
+	"auth": {
+		"glassletter2b03219f": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}

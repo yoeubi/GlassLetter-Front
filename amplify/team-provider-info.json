@@ -1,0 +1,19 @@
+{
+    "env": {
+        "awscloudformation": {
+            "AuthRoleName": "glass-letter-env-20190601173941-authRole",
+            "UnauthRoleArn": "arn:aws:iam::653932317495:role/glass-letter-env-20190601173941-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::653932317495:role/glass-letter-env-20190601173941-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "glass-letter-env-20190601173941-deployment",
+            "UnauthRoleName": "glass-letter-env-20190601173941-unauthRole",
+            "StackName": "glass-letter-env-20190601173941",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:653932317495:stack/glass-letter-env-20190601173941/cdc51db0-8448-11e9-b308-0a2d74753dac"
+        },
+        "categories": {
+            "auth": {
+                "glassletter2b03219f": {}
+            }
+        }
+    }
+}
