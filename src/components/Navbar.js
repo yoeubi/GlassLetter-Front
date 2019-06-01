@@ -21,11 +21,11 @@ const Navbar = () => {
       </Helmet>
       <Menu mode="horizontal">
         <Menu.Item style={{marginLeft: 160}} className={cx('rmBorder')}>
-          <img src={logo} className={cx('logo')}/>
+          <img src={logo} className={cx('logo')} alt=''/>
         </Menu.Item>
         <SubMenu title={
           <span className="submenu-title-wrapper">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" width={20} style={{marginLeft: 75, marginBottom: 15}}/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" width={20} style={{marginLeft: 75, marginBottom: 15}} alt=''/>
           </span>
         } className={cx('rmBorder')}>
           <Menu.Item className={cx('item')} key="writings"><Link to="/">띄운 유리병</Link></Menu.Item>

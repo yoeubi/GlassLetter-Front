@@ -65,7 +65,7 @@ const Main = () => {
         <img src={Logo} alt="로고" />
       </div>
       <div className={cx("phone")} onClick={() => setPopup(true)}>
-        연락처
+        연락처 추가하기
       </div>
       <div className={cx("text-wrapper")}>
         <form action="" onSubmit={onSubmit}>
@@ -75,14 +75,14 @@ const Main = () => {
             modules={modules}
             formats={formats}
           />
-          <button className={cx("plus")}>유리병 등록하기</button>
+          <button className={cx("plus")}>유리병 띄우기</button>
         </form>
       </div>
       {popup && (
         <div className={cx("popup-wrapper")}>
           <div className={cx("popup")}>
             <div className={cx("title")}>
-              옵션 추가하기{" "}
+              연락처 추가하기{" "}
               <span className={cx("exit")} onClick={() => setPopup(false)}>
                 ✖
               </span>
