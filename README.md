@@ -1,6 +1,14 @@
-# GlassWill 유리병 편지
+<h1 align="center">GlassWill 유리병 편지</h1>
 
-<img src="./src/assets/largeLogo.png" width="400px">
+<div align="middle">
+ <img src="./src/assets/largeLogo.png" width="400px" style="text-align=center">
+</div>
+
+<p align="center">
+	<a href="https://github.com/samslow/GlassLetter-Front"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=102"> 
+	<a href="https://github.com/samslow/GlassLetter-Front"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
+	<a href="https://github.com/samslow/GlassLetter-Front"><img src="https://img.shields.io/badge/release-v0.0.1-brightgreen.svg">
+</p>
 
 여러분은 언제 죽음을 생각하시나요? 그리고 얼마나 준비하고 계신가요?
 
