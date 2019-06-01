@@ -6,6 +6,7 @@ import { withAuthenticator } from "aws-amplify-react";
 import Splash from "./components/Splash";
 import withSplash from "./hoc/withSplash";
 import Main from "./components/Main";
+import Navbar from "./components/Navbar";
 
 const cx = classNames.bind(styles);
 // 30 인트로
