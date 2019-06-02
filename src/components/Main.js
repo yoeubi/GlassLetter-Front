@@ -69,7 +69,7 @@ const Main = () => {
         <p>- 영화 '너의 췌장을 먹고싶어' 중</p>
       </div>
       <div className={cx("phone")} onClick={() => setPopup(true)}>
-        연락처 추가하기
+        누구에게 보내실건가요?
       </div>
       <div className={cx("text-wrapper")}>
         <form action="" onSubmit={onSubmit}>
@@ -126,8 +126,7 @@ const Main = () => {
                 setName("");
                 setTel("");
               }}
-            >
-              +
+            >+
             </div>
           </div>
         </div>

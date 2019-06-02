@@ -65,7 +65,7 @@
     transform: translate(-50%, -50%);
     background-color: #fff;
     width: 85%;
-    height: 420px;
+    height: 430px;
     border-radius: 5px;
     .title {
       font-size: 20px;
@@ -109,7 +109,8 @@
       }
     }
     .phone-input {
-      padding: 15px;
+      text-align: center;
+      padding: 5px 15px;
       border-bottom: 1px solid #ccc;
       .name {
         width: 40%;
@@ -129,7 +130,7 @@
     }
     .plus-wrapper {
       height: 50px;
-      line-height: 40px;
+      line-height: 50px;
       text-align: center;
       font-size: 40px;
       vertical-align: middle;

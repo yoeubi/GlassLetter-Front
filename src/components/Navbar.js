@@ -28,8 +28,8 @@ const Navbar = () => {
             <img src={etcBtn} width={20} style={{marginLeft: 65, marginBottom: 5}} alt=''/>
           </span>
         } className={cx('rmBorder')}>
-          <Menu.Item className={cx('item')} key="writings"><Link to="/">띄운 유리병</Link></Menu.Item>
-          <Menu.Item className={cx('item')} key="takings"><Link to="/">회수한 유리병</Link></Menu.Item>
+          <Menu.Item className={cx('item')} key="writings"><Link to="/">내가 띄운 유리병</Link></Menu.Item>
+          <Menu.Item className={cx('item')} key="takings"><Link to="/">나에게 도착한 유리병</Link></Menu.Item>
           <Menu.Item className={cx('item')} key="take"><Link to="/">유리병 띄우기</Link></Menu.Item>
           <Menu.Item className={cx('item')} key="login"><Link to="/login">로그인</Link></Menu.Item>
         </SubMenu>
