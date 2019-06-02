@@ -20,7 +20,7 @@ const Navbar = () => {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.js" />
       </Helmet>
       <Menu mode="horizontal">
-        <Menu.Item style={{marginLeft: 145}} className={cx('rmBorder')}>
+        <Menu.Item style={{marginLeft: 135}} className={cx('rmBorder')}>
           <img src={logo} className={cx('logo')} alt=''/>
         </Menu.Item>
         <SubMenu title={
@@ -30,7 +30,7 @@ const Navbar = () => {
         } className={cx('rmBorder')}>
           <Menu.Item className={cx('item')} key="writings"><Link to="/">띄운 유리병</Link></Menu.Item>
           <Menu.Item className={cx('item')} key="takings"><Link to="/">회수한 유리병</Link></Menu.Item>
-          <Menu.Item className={cx('item')} key="take"><Link to="/">유리병 담기</Link></Menu.Item>
+          <Menu.Item className={cx('item')} key="take"><Link to="/">유리병 띄우기</Link></Menu.Item>
           <Menu.Item className={cx('item')} key="login"><Link to="/login">로그인</Link></Menu.Item>
         </SubMenu>
       </Menu>

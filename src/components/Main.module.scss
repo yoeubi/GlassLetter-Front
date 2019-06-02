@@ -39,7 +39,7 @@
     min-height: 100px;
   }
   .plus {
-    margin-top: 90px;
+    margin: 90px 0 20px 0;
     width: 100%;
     background-color: #76dcfe;
     border: 1px solid #76dcfe;
@@ -137,4 +137,7 @@
       cursor: pointer;
     }
   }
+}
+.praise {
+  text-align: center;
 }

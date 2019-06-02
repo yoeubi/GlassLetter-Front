@@ -64,6 +64,10 @@ const Main = () => {
       <div className={cx("logo-wrapper")}>
         <img src={Logo} alt="로고" />
       </div>
+      <div className={cx("praise")}>
+        <p>"너나 나나 어쩌면 내일 당장 죽을지도 모르는데 말야"</p>
+        <p>- 영화 '너의 췌장을 먹고싶어' 중</p>
+      </div>
       <div className={cx("phone")} onClick={() => setPopup(true)}>
         연락처 추가하기
       </div>
