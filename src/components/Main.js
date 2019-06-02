@@ -65,8 +65,7 @@ const Main = () => {
         <img src={Logo} alt="로고" />
       </div>
       <div className={cx("praise")}>
-        <p>"너나 나나 어쩌면 내일 당장 죽을지도 모르는데 말야"</p>
-        <p>- 영화 '너의 췌장을 먹고싶어' 중</p>
+        <p>"너나 나나 어쩌면 내일 당장 죽을지도 모르는데 말야"<br/>- 영화 '너의 췌장을 먹고싶어' 중</p>
       </div>
       <div className={cx("phone")} onClick={() => setPopup(true)}>
         누구에게 보내실건가요?
@@ -78,7 +77,7 @@ const Main = () => {
             value={text}
             modules={modules}
             formats={formats}
-            placeholder={"ex) 엄마가 이 글을 볼때 쯤이면 아마 나는 조금 먼 곳에 있을거야, 내가 겪어보지 못 한 것들이 아쉽지만 나 대신 좋은 것들, 좋은 곳을 경험 해줘."}
+            placeholder={"ex) 엄마는 이 글을 보지 않았으면 했는데.. 아마 이 글을 볼때 쯤이면 나는 조금 먼 곳에 있을거야, 세상에서 내가 겪어보지 못 한 것들이 아쉽지만 나 대신 좋은 것들, 좋은 곳을 경험 해줘 사랑해."}
             className={cx("editor")}
           />
           <button className={cx("plus")}>유리병 띄우기</button>

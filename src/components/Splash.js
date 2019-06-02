@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Messages from "../assets/messages.png";
-import Logo from "../assets/largeLogo.png";
+import Logo from "../assets/ImgTextLogo.png";
 import classNames from "classnames/bind";
 import styles from "./Splash.module.scss";
 
