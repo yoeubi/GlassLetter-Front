@@ -5,7 +5,7 @@ const withSplash = WrappedComponent => props => {
   const item = sessionStorage.getItem("isSplash");
   const isFirstSplash = JSON.parse(item);
   if (!isFirstSplash) {
-    return <Redirect to="/logo" />;
+    return <Redirect to="/" />;
   } else {
     return <WrappedComponent {...props} />;
   }
