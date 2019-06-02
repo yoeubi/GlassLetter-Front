@@ -16,7 +16,7 @@ const Login = props => {
     try {
       await Auth.signIn(username, password);
       const { history } = props;
-      history.replace("/");
+      history.replace("/main");
     } catch (error) {
       console.error(error);
     }

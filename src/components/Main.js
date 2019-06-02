@@ -4,7 +4,6 @@ import classNames from "classnames/bind";
 import styles from "./Main.module.scss";
 import { Auth } from "aws-amplify";
 import Navbar from "./Navbar";
-import axios from "axios";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { Redirect } from "react-router-dom";

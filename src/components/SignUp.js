@@ -43,7 +43,7 @@ class SignUp extends Component {
     try {
       await Auth.confirmSignUp(this.state.username, this.state.authCode);
       const { history } = this.props;
-      history.replace("/");
+      history.replace("/main");
     } catch (error) {
       console.error(error);
     }

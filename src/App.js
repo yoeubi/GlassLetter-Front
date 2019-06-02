@@ -15,8 +15,8 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/" component={Main} />
-          <Route exact path="/logo" component={Splash} />
+          <Route exact path="/" component={Splash} />
+          <Route exact path="/main" component={Main} />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/login" component={Login} />
           <Route path="/will" component={GlassWill} />

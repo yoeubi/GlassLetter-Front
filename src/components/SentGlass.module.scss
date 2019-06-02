@@ -5,13 +5,13 @@
 .content-wrapper {
   padding: 15px;
   .message {
-    border-radius: 5px;
-
+    margin-bottom: 20px;
     .content {
       padding: 20px;
       box-sizing: border-box;
       border: 1px solid black;
       .text {
+        margin: 10px 0;
         font-size: 30px;
         word-break: keep-all;
       }
