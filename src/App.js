@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/" component={withSplash(Main)} />
+          <Route exact path="/" component={Main} />
           <Route exact path="/logo" component={Splash} />
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/login" component={Login} />
@@ -25,4 +25,4 @@ class App extends Component {
   }
 }
 
-export default withAuthenticator(App);
+export default App;

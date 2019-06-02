@@ -7,6 +7,7 @@ import Navbar from "./Navbar";
 import axios from "axios";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
+import { Redirect } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
@@ -16,6 +17,7 @@ const Main = () => {
   const [userList, setList] = useState([]);
   const [text, setText] = useState(``);
   const [popup, setPopup] = useState(false);
+  const [redir, setRedir] = useState(false);
   const onChange = data => {
     if (text.length < 150) {
       console.log(data);
@@ -58,6 +60,12 @@ const Main = () => {
     "link",
     "image"
   ];
+  Auth.currentAuthenticatedUser().catch(user => {
+    setRedir(true);
+  });
+  if (redir) {
+    return <Redirect to="/login" />;
+  }
   return (
     <div>
       <Navbar />
@@ -74,7 +82,9 @@ const Main = () => {
             value={text}
             modules={modules}
             formats={formats}
-            placeholder={"ex) 엄마가 이 글을 볼때 쯤이면 아마 나는 조금 먼 곳에 있을거야, 내가 겪어보지 못 한 것들이 아쉽지만 나 대신 좋은 것들, 좋은 곳을 경험 해줘."}
+            placeholder={
+              "ex) 엄마가 이 글을 볼때 쯤이면 아마 나는 조금 먼 곳에 있을거야, 내가 겪어보지 못 한 것들이 아쉽지만 나 대신 좋은 것들, 좋은 곳을 경험 해줘."
+            }
             className={cx("editor")}
           />
           <button className={cx("plus")}>유리병 띄우기</button>
