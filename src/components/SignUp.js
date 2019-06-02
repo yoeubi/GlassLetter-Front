@@ -31,7 +31,7 @@ class SignUp extends Component {
         password,
         attributes: {
           email,
-          phone_number
+          phone_number: `+${phone_number}`
         }
       });
       this.setState({ submit: true });

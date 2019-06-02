@@ -7,6 +7,7 @@ import Main from "./components/Main";
 import GlassWill from "./components/GlassWill";
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
+import SentGlass from "./components/SentGlass";
 import "./App.module.scss";
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route exact path="/signup" component={SignUp} />
           <Route exact path="/login" component={Login} />
           <Route path="/will" component={GlassWill} />
+          <Route path="/getWill" component={SentGlass} />
         </Switch>
       </div>
     );

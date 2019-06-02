@@ -1,6 +1,6 @@
 .logo-wrapper {
   position: relative;
-  height: 350px;
+  height: 300px;
   img {
     width: 70%;
     position: absolute;
@@ -39,7 +39,7 @@
     min-height: 100px;
   }
   .plus {
-    margin-top: 90px;
+    margin: 90px 0 20px 0;
     width: 100%;
     background-color: #76dcfe;
     border: 1px solid #76dcfe;
@@ -65,7 +65,7 @@
     transform: translate(-50%, -50%);
     background-color: #fff;
     width: 85%;
-    height: 420px;
+    height: 430px;
     border-radius: 5px;
     .title {
       font-size: 20px;
@@ -109,7 +109,8 @@
       }
     }
     .phone-input {
-      padding: 15px;
+      text-align: center;
+      padding: 5px 15px;
       border-bottom: 1px solid #ccc;
       .name {
         width: 40%;
@@ -129,7 +130,7 @@
     }
     .plus-wrapper {
       height: 50px;
-      line-height: 40px;
+      line-height: 50px;
       text-align: center;
       font-size: 40px;
       vertical-align: middle;
@@ -137,4 +138,7 @@
       cursor: pointer;
     }
   }
+}
+.praise {
+  text-align: center;
 }

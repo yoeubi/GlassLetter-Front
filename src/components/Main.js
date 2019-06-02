@@ -8,6 +8,7 @@ import axios from "axios";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { Redirect } from "react-router-dom";
+import { sendtext } from "../request/sendMessage";
 
 const cx = classNames.bind(styles);
 
@@ -27,10 +28,12 @@ const Main = () => {
   const onSubmit = async e => {
     e.preventDefault();
     const user = await Auth.currentAuthenticatedUser();
-    console.log(user.username);
-    await axios.post("http://localhost:5000/register", {
-      username: user.username
-    });
+    console.log(user);
+    try {
+      await sendtext(user.userDataKey, userList, text);
+    } catch (error) {
+      console.error(error);
+    }
   };
   const modules = {
     toolbar: [
@@ -60,9 +63,13 @@ const Main = () => {
     "link",
     "image"
   ];
-  Auth.currentAuthenticatedUser().catch(user => {
-    setRedir(true);
-  });
+  Auth.currentAuthenticatedUser()
+    .then(user => {
+      console.log(user);
+    })
+    .catch(user => {
+      setRedir(true);
+    });
   if (redir) {
     return <Redirect to="/login" />;
   }
@@ -72,8 +79,12 @@ const Main = () => {
       <div className={cx("logo-wrapper")}>
         <img src={Logo} alt="로고" />
       </div>
+      <div className={cx("praise")}>
+        <p>"너나 나나 어쩌면 내일 당장 죽을지도 모르는데 말야"</p>
+        <p>- 영화 '너의 췌장을 먹고싶어' 중</p>
+      </div>
       <div className={cx("phone")} onClick={() => setPopup(true)}>
-        연락처 추가하기
+        누구에게 보내실건가요?
       </div>
       <div className={cx("text-wrapper")}>
         <form action="" onSubmit={onSubmit}>
@@ -128,6 +139,7 @@ const Main = () => {
             <div
               className={cx("plus-wrapper")}
               onClick={() => {
+                if (name === "" || tel === "") return;
                 setList(userList.concat({ name, tel }));
                 setName("");
                 setTel("");
