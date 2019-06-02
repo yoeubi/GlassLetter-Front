@@ -74,6 +74,8 @@ const Main = () => {
             value={text}
             modules={modules}
             formats={formats}
+            placeholder={"ex) 엄마가 이 글을 볼때 쯤이면 아마 나는 조금 먼 곳에 있을거야, 내가 겪어보지 못 한 것들이 아쉽지만 나 대신 좋은 것들, 좋은 곳을 경험 해줘."}
+            className={cx("editor")}
           />
           <button className={cx("plus")}>유리병 띄우기</button>
         </form>
@@ -92,7 +94,7 @@ const Main = () => {
                 {userList.map(item => (
                   <li key={item.tel}>
                     <span className={cx("person")}>{item.name}</span>
-                    <span className="phonenumber">{item.tel}</span>
+                    <span className={cx("phonenumber")}>{item.tel}</span>
                   </li>
                 ))}
               </ul>

@@ -35,10 +35,11 @@
   width: 90%;
   margin: 0 auto;
   .editor {
-    height: 210px;
+    height: 165px;
+    min-height: 100px;
   }
   .plus {
-    margin-top: 20px;
+    margin-top: 90px;
     width: 100%;
     background-color: #76dcfe;
     border: 1px solid #76dcfe;
@@ -91,16 +92,18 @@
         padding: 0 15px;
         font-size: 20px;
         li {
+          display: flex;
+          justify-content: space-between;
           padding-bottom: 5px;
           border-bottom: 1px solid #ccc;
           .person {
             display: inline-block;
-            width: 40%;
+            width: 35%;
             font-weight: bold;
           }
           .phonenumber {
             display: inline-block;
-            width: 60%;
+            width: 55%;
           }
         }
       }

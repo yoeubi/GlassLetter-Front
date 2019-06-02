@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames/bind";
 import styles from "./GlassWill.module.scss";
 import SeaLetter from "../assets/see-letter.png";
+import TextLogo from "../assets/textLogo.png";
 
 const cx = classNames.bind(styles);
 
@@ -23,7 +24,12 @@ const GlassWill = () => {
           <div className={cx("content")}>
             누군가에게 남기고 싶은 말이 있다면...
           </div>
-          <div className={cx("date")}>2018.06.27 채현</div>
+          <div className={cx("logo-wrapper")}>
+            <img src={TextLogo} alt="로고" />
+          </div>
+        </div>
+        <div className={cx("join-wrapper")}>
+          <button>가입하기</button>
         </div>
       </div>
     </div>
