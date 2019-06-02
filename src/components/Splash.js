@@ -11,7 +11,7 @@ class Splash extends Component {
     this.id = setTimeout(() => {
       const { history } = this.props;
       sessionStorage.setItem("isSplash", true);
-      history.replace("/");
+      history.replace("/main");
     }, 3000);
   }
 
