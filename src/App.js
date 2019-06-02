@@ -4,6 +4,7 @@ import { withAuthenticator } from "aws-amplify-react";
 import Splash from "./components/Splash";
 import withSplash from "./hoc/withSplash";
 import Main from "./components/Main";
+import GlassWill from "./components/GlassWill";
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={withSplash(Main)} />
           <Route exact path="/logo" component={Splash} />
+          <Route path="/will" component={GlassWill} />
         </Switch>
       </div>
     );
