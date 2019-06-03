@@ -79,8 +79,9 @@ const Main = () => {
         <img src={Logo} alt="로고" />
       </div>
       <div className={cx("praise")}>
-        <p>"너나 나나 어쩌면 내일 당장 죽을지도 모르는데 말야"</p>
-        <p>- 영화 '너의 췌장을 먹고싶어' 중</p>
+        <p>죽음은 생각보다 가까이 있습니다. <br/>
+          가족, 친구들에게 ‘사랑해’, ‘미안해’ 표현 하기 힘들다면,
+          오늘 유언장으로 대신 써보는 것은 어떨까요?</p>
       </div>
       <div className={cx("phone")} onClick={() => setPopup(true)}>
         누구에게 보내실건가요?
