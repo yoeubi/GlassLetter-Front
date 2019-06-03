@@ -49,6 +49,9 @@ GlassWill은 '유언은 어려운 것이다'라는 기존의 유언문화에서 
   * 생명을 담보로 일하는 사람(스턴트맨)
   * 중환자실에 있는 사람
   * 병원 대기실에 있는 사람
+  
+* [시연 영상](https://youtu.be/vkP5sZmLtaY)
+* [발표 자료](./NoNewsIsGoodNews_GlassWill.pdf)
 
 <img src="./src/assets/README/index.png" width="500px">
 
@@ -166,4 +169,3 @@ GlassWill의 회원 로그인을 통해 아이디와 비밀번호를 입력하�
 ### 연락처가 여러개일 경우 대표번호와 비상 번호 묶음
 
 해외에 나가는 유저나 번호가 여러개인 유저를 관리 할 수 있도록 해야한다.
-
