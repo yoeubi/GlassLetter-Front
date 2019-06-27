@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import classNames from "classnames/bind";
 import styles from "./SentGlass.module.scss";
-import axios from "axios";
-import { Auth } from "aws-amplify";
+// import axios from "axios";
+// import { Auth } from "aws-amplify";
 import { getmessage, userId } from "../request/sendMessage";
 
 const cx = classNames.bind(styles);

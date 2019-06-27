@@ -5,7 +5,7 @@ import classNames from "classnames/bind";
 import styles from "./SignUp.module.scss";
 import { Link } from "react-router-dom";
 import { Checkbox } from "antd";
-import { Auth } from "aws-amplify";
+// import { Auth } from "aws-amplify";
 
 const cx = classNames.bind(styles);
 
@@ -26,14 +26,14 @@ class SignUp extends Component {
   signUp = async () => {
     const { username, password, email, phone_number } = this.state;
     try {
-      await Auth.signUp({
-        username,
-        password,
-        attributes: {
-          email,
-          phone_number: `+${phone_number}`
-        }
-      });
+      // await Auth.signUp({
+      //   username,
+      //   password,
+      //   attributes: {
+      //     email,
+      //     phone_number: `+${phone_number}`
+      //   }
+      // });
       this.setState({ submit: true });
     } catch (error) {
       console.error(error);
@@ -41,7 +41,7 @@ class SignUp extends Component {
   };
   confirmSignUp = async () => {
     try {
-      await Auth.confirmSignUp(this.state.username, this.state.authCode);
+      // await Auth.confirmSignUp(this.state.username, this.state.authCode);
       const { history } = this.props;
       history.replace("/main");
     } catch (error) {

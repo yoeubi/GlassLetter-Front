@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Logo from "../assets/largeLogo.png";
 import classNames from "classnames/bind";
 import styles from "./Main.module.scss";
-import { Auth } from "aws-amplify";
+// import { Auth } from "aws-amplify";
 import Navbar from "./Navbar";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import { sendtext, userId } from "../request/sendMessage";
 
 const cx = classNames.bind(styles);
@@ -80,9 +80,11 @@ const Main = () => {
         <img src={Logo} alt="로고" />
       </div>
       <div className={cx("praise")}>
-        <p>죽음은 생각보다 가까이 있습니다. <br/>
-          가족, 친구들에게 ‘사랑해’, ‘미안해’ 표현 하기 힘들다면,
-          오늘 유언장으로 대신 써보는 것은 어떨까요?</p>
+        <p>
+          죽음은 생각보다 가까이 있습니다. <br />
+          가족, 친구들에게 ‘사랑해’, ‘미안해’ 표현 하기 힘들다면, 오늘
+          유언장으로 대신 써보는 것은 어떨까요?
+        </p>
       </div>
       <div className={cx("phone")} onClick={() => setPopup(true)}>
         누구에게 보내실건가요?
