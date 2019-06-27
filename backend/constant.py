@@ -1,0 +1,3 @@
+BUCKET_NAME = 'glassletter'
+ACCESS_KEY_ID = ""
+ACCESS_KEY_PASSWD = ""
