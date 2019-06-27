@@ -41,13 +41,13 @@ const Navbar = () => {
           className={cx("rmBorder")}
         >
           <Menu.Item className={cx("item")} key="writings">
-            <Link to="/">내가 띄운 유리병</Link>
+            <Link to="/getwill">내가 띄운 유리병</Link>
           </Menu.Item>
           <Menu.Item className={cx("item")} key="takings">
-            <Link to="/">나에게 도착한 유리병</Link>
+            <Link to="/will">나에게 도착한 유리병</Link>
           </Menu.Item>
           <Menu.Item className={cx("item")} key="take">
-            <Link to="/">유리병 띄우기</Link>
+            <Link to="/main">유리병 띄우기</Link>
           </Menu.Item>
           <Menu.Item className={cx("item")} key="login">
             <Link to="/login">로그인</Link>

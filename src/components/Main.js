@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { Redirect } from "react-router-dom";
-import { sendtext } from "../request/sendMessage";
+import { sendtext, userId } from "../request/sendMessage";
 
 const cx = classNames.bind(styles);
 
@@ -26,8 +26,9 @@ const Main = () => {
   };
   const onSubmit = async e => {
     e.preventDefault();
-    const user = await Auth.currentAuthenticatedUser();
-    console.log(user);
+    // const user = await Auth.currentAuthenticatedUser();
+    // console.log(user);
+    const user = { userDataKey: userId };
     try {
       await sendtext(user.userDataKey, userList, text);
     } catch (error) {
@@ -62,16 +63,16 @@ const Main = () => {
     "link",
     "image"
   ];
-  Auth.currentAuthenticatedUser()
-    .then(user => {
-      console.log(user);
-    })
-    .catch(user => {
-      setRedir(true);
-    });
-  if (redir) {
-    return <Redirect to="/login" />;
-  }
+  // Auth.currentAuthenticatedUser()
+  //   .then(user => {
+  //     console.log(user);
+  //   })
+  //   .catch(user => {
+  //     setRedir(true);
+  //   });
+  // if (redir) {
+  //   return <Redirect to="/login" />;
+  // }
   return (
     <div>
       <Navbar />

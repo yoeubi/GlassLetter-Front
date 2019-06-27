@@ -14,7 +14,7 @@ const Login = props => {
   const onSumbit = async e => {
     e.preventDefault();
     try {
-      await Auth.signIn(username, password);
+      // await Auth.signIn(username, password);
       const { history } = props;
       history.replace("/main");
     } catch (error) {
