@@ -12,7 +12,7 @@ class Splash extends Component {
       const { history } = this.props;
       sessionStorage.setItem("isSplash", true);
       history.replace("/main");
-    }, 3000);
+    }, 6000);
   }
 
   componentWillUnmount() {
