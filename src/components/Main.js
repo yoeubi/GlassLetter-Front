@@ -11,7 +11,7 @@ import { sendtext, userId } from "../request/sendMessage";
 
 const cx = classNames.bind(styles);
 
-const Main = () => {
+const Main = ({history}) => {
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [userList, setList] = useState([]);
@@ -29,7 +29,7 @@ const Main = () => {
     // const user = await Auth.currentAuthenticatedUser();
     // console.log(user);
     const user = { userDataKey: userId };
-    this.props.history.push("/getwill");
+    history.push("/getwill");
     try {
       await sendtext(user.userDataKey, userList, text);
     } catch (error) {
