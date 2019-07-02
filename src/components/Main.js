@@ -29,6 +29,7 @@ const Main = () => {
     // const user = await Auth.currentAuthenticatedUser();
     // console.log(user);
     const user = { userDataKey: userId };
+    this.props.history.push("/getwill");
     try {
       await sendtext(user.userDataKey, userList, text);
     } catch (error) {
